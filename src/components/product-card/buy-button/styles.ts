@@ -18,5 +18,3 @@ export const Button = styled(motion.button)`
   text-transform: uppercase;
   cursor: pointer;
 `;
-
- 
