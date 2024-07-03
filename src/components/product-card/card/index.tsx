@@ -13,8 +13,8 @@ import {
   Description,
   Name,
   Price,
+  BuyButton,
 } from "./styles";
-import { BuyButton } from "../buy-button";
 
 interface ProductCardProps {
   data: Product;
@@ -47,7 +47,11 @@ export function ProductCard({ data }: ProductCardProps) {
         <Description>{data?.description}</Description>
       </CardContent>
 
-      <BuyButton type="button" onClick={handleAddToCart}>
+      <BuyButton
+        type="button"
+        whileTap={{ scale: 0.95 }}
+        onClick={handleAddToCart}
+      >
         <ShoppingBag size={20} />
         Comprar
       </BuyButton>

@@ -52,6 +52,17 @@ export const CheckoutMain = styled.section<CheckoutProps>`
       pointer-events: auto;
       transform: translateX(0);
     `}
+
+  @media (max-width: 768px) {
+    width: calc(100% - 40px);
+    max-width: 100%;
+    padding: 20px;
+    transform: translateX(0);
+  }
+
+  @media (max-width: 576px) {
+    padding: 10px;
+  }
 `;
 
 export const CheckoutHeader = styled.div`
@@ -62,12 +73,30 @@ export const CheckoutHeader = styled.div`
   margin-top: 36px;
   margin-bottom: 70px;
   padding: 0 47px;
+
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: 576px) {
+    padding: 0 10px;
+  }
 `;
 
 export const Title = styled.h3`
   font-size: 27px;
   font-weight: 700;
   max-width: 180px;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    max-width: 150px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 20px;
+    max-width: 120px;
+  }
 `;
 
 export const CheckoutContent = styled.div`
@@ -90,12 +119,28 @@ export const ProductsPrice = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 42px 47px;
+
+  @media (max-width: 768px) {
+    padding: 30px 20px;
+  }
+
+  @media (max-width: 576px) {
+    padding: 20px 10px;
+  }
 `;
 
 export const Text = styled.p`
   font-size: 28px;
   font-weight: 700;
   line-height: 15px;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 20px;
+  }
 `;
 
 export const CheckoutButton = styled.button`
@@ -106,6 +151,14 @@ export const CheckoutButton = styled.button`
   color: #ffffff;
   border: 0;
   padding: 40px 0;
+
+  @media (max-width: 768px) {
+    padding: 30px 0;
+  }
+
+  @media (max-width: 576px) {
+    padding: 20px 0;
+  }
 `;
 
 export const ButtonClose = styled.button`
@@ -119,4 +172,16 @@ export const ButtonClose = styled.button`
   font-weight: 400;
   line-height: 15px;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    width: 32px;
+    height: 32px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 18px;
+    width: 28px;
+    height: 28px;
+  }
 `;
