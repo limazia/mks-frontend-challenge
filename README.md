@@ -2,7 +2,7 @@
 
 Para mais detalhes do desafio, [clique aqui](https://github.com/star-soft/starsoft-frontend-challenge/tree/main).
 
-Para ver o deploy, [clique aqui](https://github.com/star-soft/starsoft-frontend-challenge/tree/main).
+Para ver o deploy, [clique aqui](https://mks-frontend-challengee.vercel.app/).
 
 ### Rodando a aplicação
 
