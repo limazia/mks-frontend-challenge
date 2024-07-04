@@ -14,6 +14,19 @@ export const CheckoutContainer = styled.div<CheckoutProps>`
   pointer-events: none;
   transition: opacity 0.5s;
 
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #eeeeee;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #373737;
+    border-radius: 4px;
+  }
+
   ${({ isVisible }) =>
     isVisible &&
     css`
