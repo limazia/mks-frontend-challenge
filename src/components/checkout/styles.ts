@@ -14,19 +14,6 @@ export const CheckoutContainer = styled.div<CheckoutProps>`
   pointer-events: none;
   transition: opacity 0.5s;
 
-  &::-webkit-scrollbar {
-    width: 5px;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: #eeeeee;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: #373737;
-    border-radius: 4px;
-  }
-
   ${({ isVisible }) =>
     isVisible &&
     css`
@@ -41,14 +28,11 @@ export const CheckoutMain = styled.section<CheckoutProps>`
   z-index: 5;
   top: 0;
   right: 0;
-
   width: 486px;
   height: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-
   background: #0f52ba;
   color: #fff;
   box-shadow: -5px 0px 6px 0px rgba(0, 0, 0, 0.13);
@@ -57,6 +41,19 @@ export const CheckoutMain = styled.section<CheckoutProps>`
   pointer-events: none;
   transition: 0.5s;
   transform: translateX(468px);
+
+    &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #eeeeee;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #373737;
+    border-radius: 4px;
+  }
 
   ${({ isVisible }) =>
     isVisible &&
